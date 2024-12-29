@@ -1,0 +1,59 @@
+What are variables in Python?
+*Variables act as placeholders for data. They allow us to store and reuse values in our program.
+*This means that when you create a variable you reserve some space in the memory.
+* No need to define the data type of variables as in Java
+*Based on the data type of a variable, Python interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to Python variables, you can store integers, decimals or characters in these variables.
+*Python  stores the object in a randomly chosen memory location. Python's built-in id() function returns the address where the object is stored.
+
+Use of id()
+ Immutable objects like integers, strings, and tuples will have different id() values when reassigned because they can't be modified in place.
+ Mutable objects like lists and dictionaries will maintain the same id() if modified, but will have different id() if reassigned.
+
+Python Variables - Naming Convention
+*Every Python variable should have a unique name like a, b, c. A variable name can be meaningful like color, age, name etc. There are certain rules which should be taken care while naming a Python variable:
+  A variable name must start with a letter or the underscore character
+  A variable name cannot start with a number or any special character like $, (, * % etc.
+  A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+  Python variable names are case-sensitive which means Name and NAME are two different variables in Python.
+  Python reserved keywords cannot be used naming the variable.
+
+*If the name of variable contains multiple words, we should use these naming patterns −
+   Camel case − First letter is a lowercase, but first letter of each subsequent word is in uppercase. For example: kmPerHour, pricePerLitre
+   Pascal case − First letter of each word is in uppercase. For example: KmPerHour, PricePerLitre
+   Snake case − Use single underscore (_) character to separate words. For example: km_per_hour, price_per_litre
+
+Casting a Variable
+ Casting refers to the process of converting the value of one data type into another. Python provides several built-in functions to facilitate casting, including int(), float() and str() among others.
+ Basic Casting Functions
+    int() – Converts compatible values to an integer.
+    float() – Transforms values into floating-point numbers.
+    str() – Converts any data type into a string.
+
+
+Getting the Type of Variable
+In Python, we can determine the type of a variable using the type() function. This built-in function returns the type of the object passed to it.
+
+
+Global and Local Variables in Python
+   Python Global variables
+     Python Global variables are those which are not defined inside any function and have a global scope
+     the global variables are accessible throughout the program and inside every function.
+
+   Python local variables
+     Python local variables are those which are defined inside a function and their scope is limited to that function only
+      In other words, we can say that local variables are accessible only inside the function in which it was initialized
+
+
+Why do we use Local and Global variables in Python?
+  what if there is a Python variable with the same name initialized inside a function as well as globally? Now the question arises, will the local variable will have some effect on the global variable or vice versa, and what will happen if we change the value of a variable inside of the function f()?
+  If a variable with the same name is defined inside the scope of the function as well then it will print the value given inside the function only and not the global value.
+
+to change the gobal value of a variable from inside the function
+ The global Keyword is used inside the function of a variable
+
+Delete a Variable Using del Keyword
+We can remove a variable from the namespace using the del keyword. This effectively deletes the variable and frees up the memory it was using.
+
+Difference b/w Local Variable Vs. Global Variables
+  https://www.geeksforgeeks.org/global-local-variables-python/
+
