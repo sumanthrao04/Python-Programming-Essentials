@@ -1,0 +1,62 @@
+Python String
+ A string is a sequence of characters. Python treats anything inside quotes as a string. This includes letters, numbers, and symbols. Python has no character data type so single character is a string of length 1.
+
+Creating a String
+ Strings can be created using either single (‘) or double (“) quotes.\
+
+Multi-line Strings
+ If we need a string to span multiple lines then we can use triple quotes (”’ or “””).
+
+Accessing characters in Python String
+ Strings in Python are sequences of characters, so we can access individual characters using indexing. Strings are indexed starting from 0 and -1 from end. This allows us to retrieve specific characters from the string.
+ Note: Accessing an index out of range will cause an IndexError. Only integers are allowed as indices and using a float or other types will result in a TypeError
+ 1:5 means , it starts from 0 and take upto index 4 and it skips the 4th index
+ to access the last index = actual length of the string - 1
+
+String Slicing in Python
+ String slicing in Python is a way to get specific parts of a string by using start, end, and step values. It’s especially useful for text manipulation and data parsing.
+ Syntax of String Slicing in Python - substring = s[start : end : step]
+ Parameters:
+   s: The original string.
+   start (optional): Starting index (inclusive). Defaults to 0 if omitted.
+   end (optional): Stopping index (exclusive). Defaults to the end of the string if omitted.
+   step (optional): Interval between indices. A positive value slices from left to right, while a negative value slices from right to left. If omitted, it defaults to 1 (no skipping of characters).
+
+ Return Type
+  The result of a slicing operation is always a string (str type) that contains a subset of the characters from the original string.
+
+ Retrieve All Characters
+  Using [:] or [::] without specifying start, end, or step returns the complete string.
+
+String Immutability
+Strings in Python are immutable. This means that they cannot be changed after they are created. If we need to manipulate strings then we can use methods like concatenation, slicing, or formatting to create new strings based on the original.
+
+Deleting a String
+In Python, it is not possible to delete individual characters from a string since strings are immutable. However, we can delete an entire string variable using the del keyword
+
+Common String Methods
+ len(): The len() function returns the total number of characters in a string.
+ upper() and lower(): upper() method converts all characters to uppercase. lower() method converts all characters to lowercase.
+ strip() and replace(): strip() removes leading and trailing whitespace from the string and replace(old, new) replaces all occurrences of a specified substring with another.
+
+Concatenating and Repeating Strings
+ We can concatenate strings using + operator and repeat them using * operator.
+
+Formatting Strings
+ Python provides several ways to include variables inside strings.
+  Using f-strings - The simplest and most preferred way to format strings is by using f-strings.
+  Using format() -Another way to format strings is by using format() method.
+  How to use f-strings in Python
+  To create an f-string, prefix the string with the letter “ f ”.
+
+Printing Dictionaries key-value using f-string in Python
+While working with dictionaries, we have to make sure that if we are using double quotes (“) with the f-string then we have to use single quote (‘) for keys inside the f-string in Python and vice-versa. Otherwise, it will throw a syntax error.
+
+
+Python String format() Method
+  The format() method is a powerful tool that allows developers to create formatted strings by embedding variables and values into placeholders within a template string. This method offers a flexible and versatile way to construct textual output for a wide range of applications. Python string format() function has been introduced for handling complex string formatting more efficiently. Sometimes we want to make generalized print statements in that case instead of writing print statements every time we use the concept of formatting.
+  Syntax: { }.format(value)
+
+Using in for String Membership Testing
+ The in keyword checks if a particular substring is present in a string.
+ return of this In membership operator is boolean
